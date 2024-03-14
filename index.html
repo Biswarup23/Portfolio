@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/dbe4333937.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#About">About me</a></li>
+                    <li><a href="#About">Skills</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="Closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="Openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Student</p>
+                <h1>Hi, I'm <span>Biswarup</span><br>Mandal from India</h1>
+            </div>
+        </div>
+
+    </div>
+
+<div id="About">
+    <div class="container">
+        <div class="row">
+            <div class="about_col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about_col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hello! My self Biswarup Mandal. I'm B.Tech final year student. Currently pursuring my degree in Computer Sceiece and Engineering from Meghnad Saha Institute of Technology, Kolkata. I have keen interest in the field of Data Science and Software Development. And also i'm Soprts enthusiastic.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                </div>
+            <div class="tab-contains active-tab" id="Skills">
+                <ul>
+                    <li><span>Programming Languages</span><br>Java, C++, C, Python</li>
+                    <li><span>Web Skills</span><br>HTML, CSS, JavaScript, ReactJS, SQL</li>
+                    <li><span>Coursework</span><br>DBMS, OOPs, Operating System, SDLC, Machine Learning </li>
+                </ul>
+            </div>
+            <div class="tab-contains" id="Education">
+                <ul>
+                    <li><span>2020- 2024(Expected)</span><br>B.Tech in CSE from Meghnad Saha Institute of Technology, Kolkata</li>
+                    <li><span>2020</span><br>12th from Maria's Day School, Howrah</li>
+                    <li><span>2018</span><br>10th from Maria's Day School, Howrah</li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!------Projects-->
+<div id="Projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="Projects-List">
+            <div class="Project">
+                <img src="images/br.jpg">
+                <div class="layer">
+                    <h3>Brain Tumer Detection</h3>
+                    <p>Help in detecting the Tumor present in Brain through MRI image. It'll give more accurate result.</p>
+                    <a href="https://github.com/Biswarup23/Brain_Tumer-Detection"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="Project">
+                <img src="images/Project-2.png">
+                <div class="layer">
+                    <h3>Live face-Mask Detection</h3>
+                    <p>Help in detecting whether the person is wearing mask or not. No Human involve to check whether the person is wearing mask or not.</p>
+                    <a href="https://github.com/Biswarup23/Live-face-mask-detection"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="Project">
+                <img src="images/Cal.png">
+                <div class="layer">
+                    <h3>Simple Calculator</h3>
+                    <p>It's a simple calculator. User can do simple Addition,Multipliction,Substraction & Division.</p>
+                    <a href="https://655e5d6de3d8f271e09cfbb2--incomparable-cobbler-c0f583.netlify.app/"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/Biswarup23" class="btn">See more</a>
+    </div>
+</div>
+<!---  -----Contact------ ---->
+<div id="Contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i></i>biswarup02mandal@gmail.com</p>
+                <p><i class="fa-brands fa-square-whatsapp"></i>+91- 8334959550</p>
+                <div class="social-media">
+                    <a href="https://www.facebook.com/profile.php?id=100029820850477"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/0323biswarup/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com/Biswa2303"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/biswarup-mandal-4b506a233/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Biswarup23"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="images/Biswarup Mandal_resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Email id" required>
+                    <textarea name="Message" rows="6" placeholder="Send me a message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                    
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    
+</div>
+<script src="app.js"></script>
+</body>
+</html>
